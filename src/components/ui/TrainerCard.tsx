@@ -35,7 +35,7 @@ export function TrainerCard({ trainer, className }: TrainerCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
           <div className="flex gap-3">
             {trainer.social.map((s) => {
-              const Icon = socialIcons[s.platform] || Instagram
+              const Icon = socialIcons[s.platform] || Globe
               return (
                 <a
                   key={s.platform}
